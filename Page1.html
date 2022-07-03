@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,51 +11,104 @@
             border-style: solid;
             padding-bottom: 30px;
         }
-        .firstContainer {
-             align-items: center;
-        }
+
+        .firstContainer {}
+
         .firstHeader {
             text-align: center;
             display: flex;
+            justify-content: center;
         }
 
         .firstHeaderh3 {
             /* border-style: solid; */
             border-width: 5px;
             box-shadow: 3px 6px;
-            padding :1;
-            margin-right: 10px;
+            padding: 1;
+            margin-right: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
         }
 
         .secoundHeader {
             text-align: center;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .secondHeaderBody {
             border-style: solid;
             border-width: 5px;
             box-shadow: 3px 6px;
-            width : 500px
+            width: 500px;
         }
 
         .secoundContainer {
             padding-top: 90px;
+            margin-right: 20px;
+            margin-left: 20px;
+            text-align: right;
+            display: flex;
+            justify-content: space-between;
+            align-content: space-between;
+            flex-direction: column;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
         .thirdContainer {
 
+            text-align: right;
+            margin-right: 20px;
+        }
+
+        .thirdContainerH4 {
+            text-align: center;
+            font-size: large;
         }
 
         .fourthContainer {
+            text-align: right;
+            display: flex;
+            justify-content: right;
+            margin-right: 20px;
+            font-size: large;
+            font-weight: bold
+        }
+
+        .fifthContainer {
+            text-align: right;
+            margin-right: 20px;
+            font-size: medium;
+            font-weight: bold;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .sixthsContainer {
+            margin-right: 20px;
+            margin-left: 20px;
+            text-align: right;
+            display: flex;
+            justify-content: space-between;
+            align-content: space-between;
+            flex-direction: column;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
         }
     </style>
 </head>
-<body class = 'bodyStyle'>
+
+<body class='bodyStyle'>
     <div class="firstContainer">
         <div class="firstHeader">
             <h3 class="firstHeaderh3">2846</h3>
             <h3>مسلسل الشهادة </h3>
         </div>
         <div class="secoundHeader">
-            <h2>شهادة سلبية بعدم وجود استئناف</h2>
+            <div class="secondHeaderBody">
+                <h2>شهادة سلبية بعدم وجود استئناف</h2>
+            </div>
         </div>
     </div>
 
@@ -67,7 +121,7 @@
             </tr> -->
             <tr>
                 <td><span> احمد محمد محمود </span></td>
-                <td>  / بناء على الطلب المقدم من السيد  </td>
+                <td> / بناء على الطلب المقدم من السيد </td>
                 <td> 19/5/2022 </td>
                 <td> انه فى يوم <span> الخميس </span> الموافق</td>
             </tr>
@@ -75,7 +129,7 @@
                 <td>الفان و عشرون</td>
                 <td>لسنة 2020</td>
                 <td>مأتان و اثنتان و عشرون</td>
-                <td>بشأن استخراج شهادة فى الحكم رقم    222</td>
+                <td>بشأن استخراج شهادة فى الحكم رقم 222</td>
             </tr>
             <tr>
                 <td> 19/5/2022 </td>
@@ -88,7 +142,7 @@
 
     <div class="thirdContainer">
         <h3>و بالكشف من واقع فهارس المحكمة عن الفترة من 19-5-2022 الى 18-5-2022</h3>
-        <h4>تبين عدم حدوث استئناف فى الحكم السابق</h4>
+        <h4 class="thirdContainerH4">تبين عدم حدوث استئناف فى الحكم السابق</h4>
     </div>
 
     <div class="fourthContainer">
@@ -100,7 +154,7 @@
             <tr>
                 <td>احمد محمد محمود</td>
                 <td></td>
-            </tr>  
+            </tr>
             <tr>
                 <td>احمد محمد محمود</td>
                 <td>من السيد</td>
@@ -108,12 +162,15 @@
         </table>
     </div>
     <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-   
+
     <div class="fifthContainer">
         <table>
-            <tr>لا شأن لادارة الحاسب الألى عما اذا كان الحكم حضورى او غيابى</tr>
             <tr>
-                <td>وقد حررت هذه الشهادة بناء على طلب الطالب و دون ادنى مسئولية على قلم الكتاب و دون شطب او اضافة بعد سداد الرسم المقرر :  <span>44</span></td>
+                <td>لا شأن لادارة الحاسب الألى عما اذا كان الحكم حضورى او غيابى</td>
+            </tr>
+            <tr>
+                <td>وقد حررت هذه الشهادة بناء على طلب الطالب و دون ادنى مسئولية على قلم الكتاب و دون شطب او اضافة بعد
+                    سداد الرسم المقرر : <span>44</span></td>
             </tr>
             <tr>
                 <td>القسيمة رقم : <span>45455453</span> بتاريخ <span></span></td>
@@ -141,5 +198,6 @@
         <h4> ملاحظة : تاريخ الحكم لم يقضى الفترة القانونية لاستخراج الشهادة و هى 40 يوم </h4>
     </div>
 
-    </body>
+</body>
+
 </html>
